@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      day and night
+    </title>
+  </head>
+  <body>
+    <!--input type = "button" value = "day" onclick =
+    "document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    ">
+    <input type = "button" value = "night" onclick =
+    "document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    "-->
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+      target.style.backgroundColor='black';
+      target.style.color='white';
+      this.value='day';
+    }
+    else{
+      target.style.backgroundColor='white';
+      target.style.color='black';
+      this.value='night';
+    }">
+    <h2>
+      javascript
+    </h2>
+    <p>
+      this website is example site.
+      <br> day and night
+    </p>
+  </body>
+</html>
